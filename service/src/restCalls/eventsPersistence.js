@@ -14,7 +14,7 @@ function createEventObject(token, data) {
 
   return new Promise((resolve, reject) => {
 
-    const header = createHeader(token, {'Content-Type': 'application/json', 'hybris-metaData': 'name:id'});
+    const header = createHeader(token, {'Content-Type': 'application/json', 'hybris-metaData': 'eventId:id'});
     const documentEndpoint = DOCUMENT.resources.tenant(TENANT_DETAILS.tenant).client(TENANT_DETAILS.client).data.type(TENANT_DETAILS.collection);
 
     documentEndpoint.post(data, header).then((res) => callResolver(res, resolve, reject));

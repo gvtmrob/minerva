@@ -4,7 +4,7 @@ version: "0.0.1"
 baseUri: "http://minerva-derberg.rhcloud.com"
 schemas:
     -
-        Event: '{"type":"object","$schema":"http://json-schema.org/draft-03/schema#","description":"Array of events details.","title":"Event","properties":{"type":{"type":"string","required":true,"title":"type"},"name":{"type":"string","required":true,"title":"name"},"description":{"type":"string","required":true,"title":"description"},"website":{"type":"string","required":false,"title":"website"},"start_date":{"type":"string","required":false,"title":"start_date"},"end_date":{"type":"string","required":false,"title":"end_date"},"address":{"type":"string","required":false,"title":"address"},"latitude":{"type":"number","required":false,"title":"latitude"},"longitude":{"type":"number","required":false,"title":"longitude"}}}'
+        Event: '{"type":"object","$schema":"http://json-schema.org/draft-03/schema#","description":"Array of events details.","title":"Event","properties":{"type":{"type":"string","required":true,"title":"type"},"name":{"type":"string","required":true,"title":"name"},"description":{"type":"string","required":true,"title":"description"},"website":{"type":"string","required":false,"title":"website"},"start_date":{"type":"string","required":false,"title":"start_date"},"end_date":{"type":"string","required":false,"title":"end_date"},"address":{"type":"string","required":false,"title":"address"},"latitude":{"type":"number","required":false,"title":"latitude"},"longitude":{"type":"number","required":false,"title":"longitude"},"eventId":{"type":"string","required":true,"title":"eventId"}}}'
     -
         Creation Success: '{"type":"object","$schema":"http://json-schema.org/draft-03/schema#","description":"Object returned from the server after successful creation.","title":"Creation Success","properties":{"link":{"type":"string","required":false,"title":"link"},"id":{"type":"string","required":false,"title":"id"}}}'
     -
@@ -31,7 +31,7 @@ schemas:
                 body:
                     application/json:
                         schema: Event
-                        example: '[{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1}]'
+                        example: '[{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1,"eventId":"sample eventId"}]'
     post:
         description: Create new event or organization data.
         displayName: Create Events
@@ -45,7 +45,7 @@ schemas:
         body:
             application/json:
                 schema: Event
-                example: '{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1}'
+                example: '{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1,"eventId":"sample eventId"}'
         responses:
             "201":
                 description: Indicates successful event creation. It's Id is returned.
@@ -71,7 +71,7 @@ schemas:
                 body:
                     application/json:
                         schema: Event
-                        example: '{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1}'
+                        example: '{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1,"eventId":"sample eventId"}'
             "404":
                 description: The event you want to retrieve doesn't exist.
                 body:
@@ -98,7 +98,7 @@ schemas:
         body:
             application/json:
                 schema: Event
-                example: '{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1}'
+                example: '{"type":"sample type","name":"sample name","description":"sample description","website":"sample website","start_date":"sample start_date","end_date":"sample end_date","address":"sample address","latitude":1.1,"longitude":1.1,"eventId":"sample eventId"}'
         responses:
             "200":
                 description: Successfully updated event
