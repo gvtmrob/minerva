@@ -10,10 +10,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "config": "^1.19.0",
     "cors": "^2.7.1",
-    "express": "^4.13.4"
-  },
-  "devDependencies": {
-    "express-raml-store": "^1.2.1",
+    "express": "^4.13.4",
     "popsicle": "^0.5.13"
   },
   "scripts": {

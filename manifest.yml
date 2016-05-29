@@ -2,7 +2,7 @@
 applications:
 - name: minerva
   command: npm start
-  domain: us-east.internal.yaas.io
+  domain: cfapps.io
   host: minerva
   instances: 1
   memory: 128M
