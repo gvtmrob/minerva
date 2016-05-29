@@ -5,6 +5,6 @@ applications:
   domain: cfapps.io
   host: minerva
   instances: 1
-  memory: 128M
+  memory: 256M
 env:
   NODE_ENV: default

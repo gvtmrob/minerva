@@ -2,7 +2,9 @@
   "name": "minerva",
   "version": "0.0.1",
   "description": "Service that exposes techcomm events around the world",
-  "main": "out/index.js",
+  "engines": {
+    "node": "5.11.0"
+  },
   "dependencies": {
     "babel-cli": "^6.4.5",
     "babel-polyfill": "^6.3.14",
