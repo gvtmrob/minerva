@@ -6,3 +6,5 @@ applications:
   host: minerva
   instances: 1
   memory: 128M
+env:
+  NODE_ENV: default
