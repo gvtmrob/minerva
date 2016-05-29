@@ -12,6 +12,6 @@ export default function(app) {
 
   app.delete('/events/:eventId', deleteEvent);
 
-  app.get('/meta-data/api.raml', getRaml);
+  app.get('/', getRaml);
 
 }
