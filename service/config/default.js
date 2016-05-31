@@ -7,8 +7,8 @@ const baseUris = {
 const tenantDetails = {
   tenant      : 'minerva',
   client      : 'minerva.techcomm',
-  clientId    : '',
-  clientSecret: '',
+  clientId    : '4iiATN47NI8Dt8aSDt3ZdFWlLpWigQ6a',
+  clientSecret: 'wouZYjuVGtdJep4G',
   collection  : 'events'
 };
 
