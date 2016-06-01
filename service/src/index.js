@@ -4,11 +4,11 @@ import endpoints from './endpoints';
 
 const app = express();
 
+app.use(cors());
+
 app.use(_bodyParser);
 
 app.use(_headerParser);
-
-app.use(cors());
 
 endpoints(app);
 
