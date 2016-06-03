@@ -3,4 +3,4 @@ title: 'Overview'
 service: 'Minerva'
 ---
 
-<%- @partial('minerva_minerva') %> service provides all the functionality needed for managing the information about all the Technical Communicators community events and organization around the world.
+<%- @partial('minerva_minerva') %> service provides all the functionality needed for managing the information about all the Technical Communicators community events and organization around the world. Use it to collect info about events near to you, and attend them. You can also build some nice app basing on these data.
