@@ -4,7 +4,6 @@ interactive: true
 type: Tutorial
 title: 'Getting conference events for 2016'
 service: 'Minerva'
-quickSetup: false
 ---
 
 
